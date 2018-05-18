@@ -38,12 +38,56 @@
 
 }
 
-.frontImg {
+.frontImgContainer {
     grid-area: frontImg;
     justify-self: center;
     width: 100%;
     margin: 5px 0 100px 0;
+    position: relative;
+    display: grid;
+
 }
+
+.frontImgContainer img {
+    width: 100%;
+    z-index: 1;
+    grid-area: frontImg;
+}
+
+.frontImgContainer p {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    font-size: xx-large;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: none;
+}
+
+.praWindow {
+    grid-area: praWindow;
+    background-image: url("http://cdn.thefiscaltimes.com/cdn/farfuture/0p1kMnKWUB8WJmEMGP43ztKaVrbEKsc79CUHLsCjo6o/mtime:1496949951/sites/default/files/styles/article_hero_image/public/04172014_Chocolate.jpg?itok=HZBTQ-WS");
+}
+
+.encloWindow {
+    grid-area: encloWindow;
+    background-image: url("https://i.pinimg.com/736x/ed/aa/03/edaa0319001e01aae57af15cb6dd7a05--snowflakes-chocolate-packaging.jpg");
+}
+
+.workWindow {
+    grid-area: workWindow;
+    background-image: url("https://www.belgianchocolateworkshop.com/greatest_workshop_chocolate.jpg");
+}
+
+.aboutWindow {
+    grid-area: aboutWindow;
+    background-image: url("http://www.chocolatetales.ca/blog/wp-content/uploads/2015/03/chocolate-making-workshop-with-25101244.jpg");
+}
+
+
+
 
 .details {
     grid-area: details;
@@ -87,8 +131,3 @@
     text-align: center;
 
 }
-
-
-
-
-
