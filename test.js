@@ -88,4 +88,3 @@ let newTable = new Table();
 newTable.poisonAllPlates();
 newTable.doomDay();
 console.log(newTable);
-
